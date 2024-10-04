@@ -10,5 +10,7 @@ RUN pip install psycopg2-binary
 # Копируем ваш скрипт в контейнер
 COPY main.py .
 
+EXPOSE 80
+
 # Команда для запуска вашего приложения
 CMD ["python", "main.py"]
